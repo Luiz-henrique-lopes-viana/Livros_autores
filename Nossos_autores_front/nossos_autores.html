@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nossos autores</title>
+  <link rel="stylesheet" href="nossos_autores.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script type="module" src="array_livros.js"></script>
+  <script type="module" src="nossos_autores.js" defer></script>
+</head>
+
+<body>
+  <main class="main_style">
+    <div class="titile_container">
+      <img class="img_autores" src="img/logo_nossos_autores.svg" alt="nossos autores">
+      <div class="search-container">
+        <input type="text" class="search-input" placeholder="Pesquisar Obras" maxlength="30">
+        <img class="search-icon" src="img/botão_search.svg" alt="Pesquisar">
+        <div id="no-results-message" class="no-results-message" style="display: none; color: crimson; margin-top: 15px;"></div>
+        <div class="sort-container">
+          <label for="sort-dropdown" class="sort-label">Ordenar Por:</label>
+          <select id="sort-dropdown" class="sort-dropdown">
+            <option value="recentes">Mais recentes</option>
+            <option value="antigos">Mais antigos</option>
+            <option value="autor">Autor</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="conteudo">
+      <div id="book-list"></div>
+    </div>
+  </main>
+  <div class="rodape">
+    <span>
+      Nossos Autores - desenvolvido pela Diretoria de Tecnologia da Informação e Comunicação da Polícia Militar do
+      Estado de São Paulo
+    </span>
+    <br>
+    <span> DTIC. ©️ 2024. Todos os direitos reservados.</span>
+  </div>
+</body>
+</html>
